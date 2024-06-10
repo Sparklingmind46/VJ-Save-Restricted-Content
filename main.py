@@ -63,7 +63,7 @@ def progress(current, total, message, type):
 # start command
 @bot.on_message(filters.command(["start"]))
 def send_start(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
-	bot.send_message(message.chat.id, f"**__👋 Hii** **{message.from_user.mention}**, **I am Save Restricted Bot, I can send you restricted content by it's post link__**\n\n{USAGE}",
+	bot.send_message(message.chat.id, f"**👋 Hii** {message.from_user.mention}, **I am Save Restricted Bot, I can send you restricted content by it's post link**\n\n{USAGE}",
 	reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("🌐 Update Channel", url="https://t.me/Amit_4626")]]), reply_to_message_id=message.id)
 
 
@@ -245,20 +245,19 @@ def get_message_type(msg: pyrogram.types.messages_and_media.message.Message):
 	except: pass
 
 
-USAGE = """**FOR PUBLIC CHATS 👇**
-**__Post ki link send karo aur fir dekho mera jalwa 😎😁__**
+USAGE = """**➥FOR PUBLIC CHATS 👇**
+•Post ki link send karo aur fir dekho mera jalwa 😎😁
 
-**FOR PRIVATE CHATS 👇**
-__first send invite link of the chat ,then send post/s link__
+**➥FOR PRIVATE CHATS 👇**
+__•First send invite link of the chat ,then send post/s link__
 
-**MULTI POSTS**
+**➥MULTI POSTS** (To download multiple posts at once)
 
-__send public/private posts link as explained above with formate "from - to" to send multiple messages like below__
-
-```
+Send link in this format (From-to) 👇
 https://t.me/xxxx/1001-1010
-```
-**Developer - 𝗔𝗺𝗶𝘁**
+
+**➥Developed by - 𝗔𝗺𝗶𝘁 🧸✨**
+
 """
 
 
