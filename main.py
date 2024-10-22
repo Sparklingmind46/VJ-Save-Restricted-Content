@@ -83,7 +83,7 @@ def save(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
 			except Exception as e: 
 				bot.send_message(message.chat.id,f"**Error** : __{e}__", reply_to_message_id=message.id)
 				return
-			bot.send_message(message.chat.id,"**Chat Joined, Abhi maza aayega na bhidu 😈😁**", reply_to_message_id=message.id)
+			bot.send_message(message.chat.id,"**Chat Joined, Abhi maja aayega na bhidu 😈😁**", reply_to_message_id=message.id)
 		except UserAlreadyParticipant:
 			bot.send_message(message.chat.id,"**Chat alredy Joined, send post link**", reply_to_message_id=message.id)
 		except InviteHashExpired:
@@ -245,18 +245,18 @@ def get_message_type(msg: pyrogram.types.messages_and_media.message.Message):
 	except: pass
 
 
-USAGE = """**➥FOR PUBLIC CHATS 👇**
-•Post ki link send karo aur fir dekho mera jalwa 😎😁
+USAGE = """**➥ FOR PUBLIC CHATS 👇**
+• Post ki link do fir dekho apun ka jalwa 😎😁
 
-**➥FOR PRIVATE CHATS 👇**
-__•First send invite link of the chat ,then send post/s link__
+**➥ FOR PRIVATE CHATS 👇**
+__• First invite link ,then send post link__
 
-**➥MULTI POSTS** (To download multiple posts at once)
+**➥ MULTI POSTS** (To download multiple posts at once)
 
 Send link in this format (From-to) 👇
 https://t.me/xxxx/1001-1010
 
-**➥Developed by - 𝗔𝗺𝗶𝘁 🧸✨**
+**➥ Developed by - @Ur_Amit_01 🧸✨**
 
 """
 
