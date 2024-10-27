@@ -65,7 +65,7 @@ def progress(current, total, message, type):
 def send_start(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
   bot.send_message(message.chat.id, f"👋 Hii {message.from_user.mention}, **I am Save Restricted Bot, I can send you restricted content by it's post link**\n\n{USAGE}",
   reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("🌐 Updates Channel", url="https://t.me/Amit_0_1")]]), reply_to_message_id=message.id)
-    await message.react(emoji="🔥")
+        await message.react(emoji="🔥")
         await message.reply_sticker("CAACAgUAAxkBAAEBzMdnF6a4Qj1lVp78C_LBw2v0fLR3LAACCgADwSQxMQxd6ZP7f4SuHgQ") 
         await asyncio.sleep(3)
 
