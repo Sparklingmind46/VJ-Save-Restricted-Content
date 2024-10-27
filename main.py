@@ -64,7 +64,7 @@ def progress(current, total, message, type):
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     await message.react(emoji="🔥")
-	m=await message.reply_sticker("CAACAgUAAxkBAAEBzMdnF6a4Qj1lVp78C_LBw2v0fLR3LAACCgADwSQxMQxd6ZP7f4SuHgQ") 
+        m=await message.reply_sticker("CAACAgUAAxkBAAEBzMdnF6a4Qj1lVp78C_LBw2v0fLR3LAACCgADwSQxMQxd6ZP7f4SuHgQ") 
         await asyncio.sleep(3)
         await m.delete()
 	await bot.send_message(message.chat.id, f"👋 Hii {message.from_user.mention}, **I am Save Restricted Bot, I can send you restricted content by it's post link**\n\n{USAGE}",
@@ -73,7 +73,7 @@ async def start(client, message):
 
 @bot.on_message(filters.text)
 def save(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
-	print(message.text)
+        print(message.text)
 
 	# joining chats
 	if "https://t.me/+" in message.text or "https://t.me/joinchat/" in message.text:
